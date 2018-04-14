@@ -1,7 +1,7 @@
 var cart = [];
 
 function getCart() {
-   card = new Object((itemName : itemPrice));
+   // card = new Object((itemName : itemPrice));
    return cart;
 }
 
