@@ -50,3 +50,4 @@ function placeOrder(cardNumber) {
 console.log(addToCart("bananas"));
 console.log(addToCart("eggs"));
 console.log(cart);
+console.log(viewCart());
