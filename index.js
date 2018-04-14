@@ -59,8 +59,3 @@ function placeOrder(cardNumber) {
    }
    return `Sorry, we don't have a credit card on file for you.`;
 }
-
-console.log(addToCart("bananas"));
-console.log(addToCart("eggs"));
-console.log(cart);
-console.log(viewCart());
