@@ -1,7 +1,6 @@
 var cart = [];
 
 function getCart() {
-   // card = new Object((itemName : itemPrice));
    return cart;
 }
 
@@ -21,7 +20,7 @@ function addToCart(item) {
 function viewCart() {
    if (cart.length>0){
      for (var i = 0; i < cart.length; i++){
-        return `In your cart, you have ${itemName} at ${itemPrice}`;
+        return `In your cart, you have ${cart.itemName} at ${cart.itemPrice}`;
      }
    }
   else return `Your shopping cart is empty.`;
