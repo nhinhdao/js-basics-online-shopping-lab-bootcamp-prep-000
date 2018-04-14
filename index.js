@@ -47,11 +47,11 @@ function placeOrder(cardNumber) {
 console.log(addToCart("bananas"));
 console.log(addToCart("eggs"));
 console.log(cart);
-var tempcart = setCart(cart);
-console.log(tempcart);
-var total1 = 0;
-for (var i = 0; i < tempcart.length; i++){
-  total1 += tempcart[i].itemPrice;
-}
-// total1 += tempcart.itemPrice;
-console.log(total1);
+// var tempcart = setCart(cart);
+// console.log(tempcart);
+// var total1 = 0;
+// for (var i = 0; i < tempcart.length; i++){
+//   total1 += tempcart[i].itemPrice;
+// }
+// // total1 += tempcart.itemPrice;
+// console.log(total1);
