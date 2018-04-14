@@ -52,7 +52,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-   
+
 }
 
 console.log(addToCart("bananas"));
