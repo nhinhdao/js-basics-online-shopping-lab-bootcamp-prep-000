@@ -22,14 +22,11 @@ function viewCart() {
    if (cart.length>0){
      for (var i = 0; i < cart.length; i++){
         if ( i === cart.length - 1){
-           console.log(i);
-           arrayitemprice[i] = "and " + cart[i].itemName + " at $" + cart[i].itemPrice + '.';
+           arrayitemprice[i] = " and " + cart[i].itemName + " at $" + cart[i].itemPrice + '.';
         }
         else arrayitemprice[i] = cart[i].itemName + " at $" + cart[i].itemPrice;
-        console.log(i);
-
      }
-             return `In your cart, you have ${arrayitemprice} `;
+             return `In your cart, you have ${arrayitemprice}`;
    }
   else return `Your shopping cart is empty.`;
 }
