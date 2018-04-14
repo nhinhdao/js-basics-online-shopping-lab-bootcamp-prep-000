@@ -28,10 +28,10 @@ function viewCart() {
 }
 
 function total() {
-   var tempcart = cart;
+   // var tempcart = cart;
    var sum = 0;
-   for (var i = 0; i < tempcart.length; i++){
-     sum += tempcart[i].itemPrice;
+   for (var i = 0; i < cart.length; i++){
+     sum += cart[i].itemPrice;
    }
    return sum;
 }
