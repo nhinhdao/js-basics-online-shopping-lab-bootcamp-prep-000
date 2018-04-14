@@ -1,4 +1,4 @@
-var cart = {itemName : itemPrice};
+var cart = [];
 
 function getCart() {
    return cart;
