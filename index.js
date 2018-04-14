@@ -26,9 +26,9 @@ function viewCart() {
            arrayitemprice[i] = "and" + cart[i].itemName + " at " + cart[i].itemPrice + '.';
         }
         console.log(i);
-        arrayitemprice[i] = cart[i].itemName + " at " + cart[i].itemPrice + ',';
+        else arrayitemprice[i] = cart[i].itemName + " at " + cart[i].itemPrice + ',';
         console.log(i);
-        
+
         return `In your cart, you have ${arrayitemprice}`;
      }
    }
