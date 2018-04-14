@@ -25,12 +25,11 @@ function viewCart() {
            console.log(i);
            arrayitemprice[i] = "and" + cart[i].itemName + " at " + cart[i].itemPrice + '.';
         }
-        console.log(i)
         else arrayitemprice[i] = cart[i].itemName + " at " + cart[i].itemPrice + ',';
         console.log(i);
 
-        return `In your cart, you have ${arrayitemprice}`;
      }
+             return `In your cart, you have ${arrayitemprice}`;
    }
   else return `Your shopping cart is empty.`;
 }
