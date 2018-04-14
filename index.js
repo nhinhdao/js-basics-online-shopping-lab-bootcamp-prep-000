@@ -21,13 +21,14 @@ function viewCart() {
    var arrayitemprice = [];
    if (cart.length>0){
      for (var i = 0; i < cart.length; i++){
-        console.log(i);
-        arrayitemprice[i] = cart[i].itemName + " at " + cart[i].itemPrice + ',';
-        console.log(i);
         if ( i === cart.length - 1){
            console.log(i);
            arrayitemprice[i] = "and" + cart[i].itemName + " at " + cart[i].itemPrice + '.';
         }
+        console.log(i);
+        arrayitemprice[i] = cart[i].itemName + " at " + cart[i].itemPrice + ',';
+        console.log(i);
+        
         return `In your cart, you have ${arrayitemprice}`;
      }
    }
