@@ -26,7 +26,7 @@ function viewCart() {
         }
         else arrayitemprice[i] = cart[i].itemName + " at $" + cart[i].itemPrice;
      }
-             return `In your cart, you have ${arrayitemprice} .`;
+             return `In your cart, you have ${arrayitemprice}.`;
    }
   else return `Your shopping cart is empty.`;
 }
