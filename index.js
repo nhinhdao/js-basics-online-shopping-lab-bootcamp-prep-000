@@ -49,3 +49,5 @@ console.log(addToCart("eggs"));
 console.log(cart);
 var tempcart = setCart(cart);
 console.log(tempcart);
+total += tempcart.itemPrice;
+console.log(total);
