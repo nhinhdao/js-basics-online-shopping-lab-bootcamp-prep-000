@@ -18,17 +18,20 @@ function addToCart(item) {
 }
 
 function viewCart() {
-   var tempcart = setCart(cart);
-   if (tempcart.length>0){
-     for (var i = 0; i < tempcart.length; i++){
-        return `In your cart, you have ${tempcart.itemName} at ${tempcart.itemPrice}`;
+   var arrayitemprice = [];
+   if (cart.length>0){
+     for (var i = 0; i < cart.length; i++){
+        arrayitemprice[i] = cart[i].itemName + " at " + cart[i].itemPrice + ',';
+        if ( i === cart.length - 1){
+           arrayitemprice[i] = "and" + cart[i].itemName + " at " + cart[i].itemPrice + '.';
+        }
+        return `In your cart, you have ${arrayitemprice}`;
      }
    }
   else return `Your shopping cart is empty.`;
 }
 
 function total() {
-   // var tempcart = cart;
    var sum = 0;
    for (var i = 0; i < cart.length; i++){
      sum += cart[i].itemPrice;
@@ -47,11 +50,3 @@ function placeOrder(cardNumber) {
 console.log(addToCart("bananas"));
 console.log(addToCart("eggs"));
 console.log(cart);
-// var tempcart = setCart(cart);
-// console.log(tempcart);
-// var total1 = 0;
-// for (var i = 0; i < tempcart.length; i++){
-//   total1 += tempcart[i].itemPrice;
-// }
-// // total1 += tempcart.itemPrice;
-// console.log(total1);
