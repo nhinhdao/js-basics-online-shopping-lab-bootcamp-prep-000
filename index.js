@@ -52,7 +52,12 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-
+   if (cardNumber != null){
+      var cost = total();
+      cart = cart.slice(cart.length);
+      return `Your total cost is $` + cost + `, which will be charged to the card ${cardNumber}.`
+   }
+   return `Sorry, we don't have a credit card on file for you.`;
 }
 
 console.log(addToCart("bananas"));
