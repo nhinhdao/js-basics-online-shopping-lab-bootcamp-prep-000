@@ -40,11 +40,19 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+   var index = 0;
+   for (var i = 0; i < cart.length; i++){
+      if (cart[i].itemName === item) {
+         index = i;
+         cart.splice(index - 1, 1);
+         return cart;
+      }
+   }
+   return `That item is not in your cart.`
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+   }
 }
 
 console.log(addToCart("bananas"));
