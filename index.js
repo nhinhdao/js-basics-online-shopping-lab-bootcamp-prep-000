@@ -24,9 +24,9 @@ function viewCart() {
         if ( cart.length > 1 && i === cart.length - 1){
            arrayitemprice[i] = " and " + cart[i].itemName + " at $" + cart[i].itemPrice;
         }
-        else arrayitemprice[i] = cart[i].itemName + " at $" + cart[i].itemPrice;
+        else arrayitemprice[i] = ' ' + cart[i].itemName + " at $" + cart[i].itemPrice;
      }
-             return `In your cart, you have ${arrayitemprice}.`;
+             return `In your cart, you have${arrayitemprice}.`;
    }
   else return `Your shopping cart is empty.`;
 }
