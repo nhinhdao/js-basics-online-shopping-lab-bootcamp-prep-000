@@ -31,7 +31,7 @@ function total() {
    var tempcart = cart;
    var sum = 0;
    for (var i = 0; i < tempcart.length; i++){
-     sum += tempcart.itemPrice[i];
+     sum += tempcart[i].itemPrice;
    }
    return sum;
 }
